@@ -1,0 +1,9 @@
+name: "my workflow"
+on: [push]
+jobs:
+  create-model:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python app.py
+   
