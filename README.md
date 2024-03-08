@@ -1,3 +1,3 @@
-MLOps demo
+MLOps demo 
 
 by Chris Noring
