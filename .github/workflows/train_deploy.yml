@@ -22,5 +22,12 @@ jobs:
         pip install -r requirements.txt
     - name: Train model
       run: python train.py
+    - name: Adding model to repo dist folder
+      uses: EndBug/add-and-commit@v9
+      with:
+        author_name: Chris
+        author_email: mail@example.com
+        message: 'Adding model as artifact'
+        add: 'dist/hello.model'
     - name: Deploy model
       run: echo "TBC deploying model"
